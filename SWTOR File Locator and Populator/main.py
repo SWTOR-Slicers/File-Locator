@@ -73,11 +73,14 @@ def grab_files_to_load(paths_json):
             parsed_objs.append(to_push)
 
         else:
-            s = slot_obj(entry)
-            if s.slot_name == "head":
-                eyeMatInfo = slot_obj_mat_only(entry['materialInfo']['eyeMatInfo'])
-            
-            parsed_objs.append(s)
+            try:
+                s = slot_obj(entry)
+                if s.slot_name == "head":
+                    eyeMatInfo = slot_obj_mat_only(entry['materialInfo']['eyeMatInfo'])
+                
+                parsed_objs.append(s)
+            except:
+                print("skipped slot due to error")
     
     return parsed_objs
     
