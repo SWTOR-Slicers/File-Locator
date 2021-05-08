@@ -1,4 +1,4 @@
-# File-Locator-and-Populator
+# File-Locator
 This is a tool to be used in tandem with the outfit designer at [https://torcommunity.com/tools/character-designer](https://torcommunity.com/tools/character-designer). 
 Requirements:
 * You need to have extracted the .tor archives before usage. 
